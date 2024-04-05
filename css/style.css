@@ -29,12 +29,10 @@
   font-size: 1.25rem;
 }
 
-.right-image {
-  height: auto;
-  width: 250px;
-  float: right;
+.body {
+  background-color: rgba(127, 255, 212, 0.249);
 }
 
-.body {
-  background-color: aquamarine;
+.right-image {
+  float: right;
 }

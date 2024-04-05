@@ -7,13 +7,13 @@
 
 function myButtonClicked() {
   // input
-  const radiusNumber = document.getElementById("radius-number").value
+  const radiusOfSphere = parseFloat(document.getElementById("radius-number").value)
 
   // process
-  const areaOfCircle = (2 * Math.PI * radiusNumber)
-  const roundedAnswer = areaOfCircle.toFixed(2)
+  const volumeHalfway = (Math.PI * radiusOfSphere * 3) * (4/3)
+  const finalAnswer = volumeHalfway.toFixed(2)
 
   // output
-  document.getElementById("area-of-a-cicle").innerHTML =
-    "The area of this circle is: " + roundedAnswer + " cm²."
+  document.getElementById("volume-of-a-sphere").innerHTML =
+    "The volume of this sphere is: " + finalAnswer + " cm³."
 }
