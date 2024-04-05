@@ -10,7 +10,7 @@ function myButtonClicked() {
   const radiusOfSphere = parseFloat(document.getElementById("radius-number").value)
 
   // process
-  const volumeHalfway = (Math.PI * radiusOfSphere * 3) * (4/3)
+  const volumeHalfway = (Math.PI * (radiusOfSphere * radiusOfSphere * radiusOfSphere)) * (4/3)
   const finalAnswer = volumeHalfway.toFixed(2)
 
   // output
